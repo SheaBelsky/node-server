@@ -18,16 +18,31 @@
         </section>
         <section class="section">
             <h1 class="center title">About Us</h1>
-            <div class="content">
-                SpoilRator is an intuitive home assistant meant to keep track of food found in one's refrigerator, detect
-                what food is fresh and spoiled, and present this information to fridge raiders.
+            <div class="content is-medium">
+                <p>
+                    SpoilRator is an intuitive home assistant meant to keep track of food found in one's refrigerator, detect
+                    what food is fresh and spoiled, and present this information to fridge raiders.
+                </p>
 
-                Using Google Cloud Platform's Visual Recognition service, an Android Things camera takes a picture every
-                time the fridge door is opened.
+                <p>
+                    Using Android Things, a camera takes a picture every time the fridge door is opened. This image is then sent
+                    to a Node.js server, which sends it to Google Cloud Platform's Visual Recognition service.
+                </p>
+
+                <p>
+                    Visual Recognition returns information about the image, including what foods are present. Combined with
+                    a MySQL database, Node.js delivers metrics on how long the food has been sitting there, and what foods might have
+                    gone rotten. Furthermore, food that has been removed from the fridge will be removed from the database,
+                    so you'll always be up to date with what's being kept cold!
+                </p>
+
+                <p>
+                    All of this information is delivered by a touch-screen display that sits outside the refrigerator.
+                </p>
             </div>
         </section>
         <section class="section">
-            <h1 class="center title">Built With</h1>
+            <h1 class="title">Built With</h1>
             <div class="columns madewith">
                 <div class="column"></div>
                 <div class="column">
@@ -46,6 +61,30 @@
                     <img src="/img/GoogleCloud.png" class="madewith" />
                 </div>
                 <div class="column"></div>
+            </div>
+        </section>
+        <section class="hackers section is-primary">
+            <h1 class="title">Hackers</h1>
+            <div class="columns">
+                <div class="column">
+                    <img src="https://i.imgur.com/IsJTPxY.png" class="hacker-img" />
+                    <div>Ridhwaan Ahmed Anayetullah</div>
+                    <div>Android Things camera, display</div>
+                </div>
+                <div class="column">
+                    <img src="https://avatars0.githubusercontent.com/u/15164473?v=4?height=180&width=180" class="hacker-img"/>
+                    <div>Shea Belsky</div>
+                    <div>Website, Node.js API, GCP Database, Server, and VR Instance</div>
+                </div>
+                <div class="column">
+                    <img src="http://i.imgur.com/NJAkII7.jpg" class="hacker-img"/>
+                    <div>Sabrina Smai</div>
+                    <div>Devpost, GCP VR Instance, trained backup ML model</div>
+                </div>
+                <div class="column">
+                    <div>Richard Wang</div>
+                    <div>Android Things camera, Android application, display</div>
+                </div>
             </div>
         </section>
     </body>

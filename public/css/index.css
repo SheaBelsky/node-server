@@ -8,3 +8,11 @@ img.madewith {
     margin: 0 5px;
     width: 200px;
 }
+
+img.hacker-img {
+    width: 200px;
+}
+
+section.hackers {
+    text-align: center;
+}
