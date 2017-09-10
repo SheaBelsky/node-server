@@ -1,0 +1,10 @@
+div.madewith {
+    line-height: 124px;
+    text-align: center;
+}
+
+img.madewith {
+    display: inline;
+    margin: 0 5px;
+    width: 200px;
+}
